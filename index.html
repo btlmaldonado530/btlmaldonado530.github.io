@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pot of Gold</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8_sQCgtAw6i925xJBa9rVLMdbHqRI8vIlEQ&usqp=CAU" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="background">
+      <h1>Pot of Gold</h1>
+      <h2>Treasure Hunt Challenge</h2>
+      <br />
+      <div class="table">
+        <ol>
+          <li>Click the boxes on gameboard</li>
+          <li>Find the treasure and you win</li>
+          <li>Find the bomb and you lose</li>
+        </ol>
+      </div>
+      <div class="table">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw_rKps91cm5-23BTlHtAs1oJG1P5x4mQgVz2IN_zbqWjjsM7twjdJpFs0Sq9N5zYJDks&usqp=CAU"
+          alt="Pot of Gold" />
+      </div>
+      <br />
+      <br />
+      <div class="table">
+        <table border="1" style="height: 300px; width: 300px">
+          <tr>
+            <td id="0" onclick="treasure(0)">?</td>
+            <td id="1" onclick="treasure(1)">?</td>
+            <td id="2" onclick="treasure(2)">?</td>
+          </tr>
+          <tr>
+            <td id="3" onclick="treasure(3)">?</td>
+            <td id="4" onclick="treasure(4)">?</td>
+            <td id="5" onclick="treasure(5)">?</td>
+          </tr>
+          <tr>
+            <td id="6" onclick="treasure(6)">?</td>
+            <td id="7" onclick="treasure(7)">?</td>
+            <td id="8" onclick="treasure(8)">?</td>
+          </tr>
+        </table>
+      </div>
+      <p id="outcome"></p>
+      <div class="restart">
+        <button type="button" onclick="location.reload()">Restart Game</button>
+      </div>
+      <br />
+      <br />
+      <br />
+      <footer>
+        <a href="https://google.com" target="_blank">Find us on Google</a>
+        &copy; Developed by: Theo & Oscar & Bernardina
+      </footer>
+      <script type="text/javascript" src="treasurehunt.js"></script>
+    </div>
+  </body>
+</html>

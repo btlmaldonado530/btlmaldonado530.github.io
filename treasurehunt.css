@@ -1,0 +1,44 @@
+h2 {
+  text-align: center;
+}
+
+.table {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.background {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl-PEe8jafMzw3guqEm6wnaE2lMsldFbIH7g&usqp=CAU');
+  background-position: center;
+  background-size: cover;
+}
+
+.background::before {
+  opacity: 0.7;
+}
+
+h1 {
+  animation: sidetoside 4s infinite;
+  text-align: center;
+}
+
+@keyframes sidetoside {
+  0% {
+    transform: scaleX(0.5);
+    opacity: 0;
+  }
+  60% {
+    transform: scaleX(1.6);
+    opacity: 1;
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.restart {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
